@@ -115,10 +115,6 @@ export default class activity{
                 this.deleteEntry(data);
             });
 
-            row.querySelector(".tracker__delete").addEventListener("mouseover", () => {
-                ;
-            });
-
             tableBody.appendChild(row);
         };
 
