@@ -66,21 +66,23 @@
     background: rgb(207, 206, 206);
 }
 
-tracker__row--add td {
-    text-align: right;
-}
-
 .tracker__row--add{
     border-top: 3px solid #333333;
     border-bottom: 3px solid #333333;
     background: #ffffff;
 }
 
+.tracker__row--add td {
+    text-align: right;
+}
 
-
-tracker__add{
+.tracker__add{
     display: inline-block;
     padding: 0.8em 1em;
     color: green;
     cursor: pointer;
+}
+
+.tracker__add:hover{
+    background:  rgb(207, 206, 206);
 }
