@@ -62,9 +62,28 @@
     cursor: pointer;
 }
 
-.tracker__button:hover{
+.tracker__button:hover .tarcker_delete{
     background: rgb(207, 206, 206);
 }
+
+.tracker__button .tooltiptext {
+    visibility: hidden;
+    width: 52px;
+    background-color: beige;
+    color: #000000;
+    text-align: center;
+    border-radius: 2.5px;
+    padding: 0;
+    font-size: 0.5em;
+  
+    /* Position the tooltip */
+    position:bottom;
+    z-index: 1;
+  }
+  
+  .tracker__button:hover .tooltiptext {
+    visibility: visible;
+  }
 
 .tracker__row--add{
     border-top: 3px solid #333333;

@@ -64,7 +64,9 @@ export default class activity{
                     <span class="tracker__text">minutes</span>
                 </td>
                 <td>
-                    <button type="button" class="tracker__button tracker__delete">&times;</button>
+                    <button type="button" class="tracker__button tracker__delete">&times; 
+                        <span class="tooltiptext">Delete Row</span>
+                    </button>
                 </td>
             </tr>
         `;
@@ -113,7 +115,9 @@ export default class activity{
                 this.deleteEntry(data);
             });
 
-            
+            row.querySelector(".tracker__delete").addEventListener("mouseover", () => {
+                ;
+            });
 
             tableBody.appendChild(row);
         };
